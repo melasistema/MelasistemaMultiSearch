@@ -1,0 +1,13 @@
+{% sw_extends '@Storefront/storefront/layout/header/search.html.twig' %}
+
+{% block layout_header_search_form %}
+    {{ parent() }}
+    {% block layout_header_multi_search_button %}
+        <div class="header-multi-search">
+            <!-- Button trigger multi-search modal -->
+            <button type="button" id="open-multi-search-modal" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#multiSearchModal">
+                {{ "melasistemaMultiSearch.openModal.button.text"|trans }}
+            </button>
+        </div>
+    {% endblock %}
+{% endblock %}

@@ -1,0 +1,6 @@
+{% sw_extends "@Storefront/storefront/base.html.twig" %}
+
+{% block base_footer %}
+    {{ parent() }}
+    {% sw_include '@MelasistemaMultiSearch/storefront/component/multiSearch/modal/multi-search-modal.html.twig' ignore missing %}
+{% endblock %}

@@ -1,0 +1,17 @@
+{
+    "melasistemaMultiSearch": {
+        "openModal" : {
+            "button" : {
+                "text": "Ricerca Multipla"
+            }
+        },
+        "modal" : {
+            "title": "Ricerca Multipla",
+            "text": "Inserisci le tue parole chiave, una per riga.",
+            "form": {
+                "placeholder": "Digita una parola chiave per riga",
+                "submitButton": "Inizia"
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+div#multiSearchModal {
+  form#mela-multi-search-form {
+
+    .form-elements {
+      margin-bottom: 45px;
+      textarea {
+        width: 100%;
+      }
+    }
+
+    .form-footer-elements {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+    }
+
+  }
+}

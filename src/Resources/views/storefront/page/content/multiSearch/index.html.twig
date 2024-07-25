@@ -1,0 +1,17 @@
+{% sw_extends '@Storefront/storefront/base.html.twig' %}
+
+{% block base_content %}
+
+    <div data-multi-search class="multi-search-tabs-wrapper">
+        <ul>
+            {% for tab in tabs %}
+                <li>
+                    <a class="multi-search-link" href="{{ tab.url }}"><button class="btn btn-outline-secondary {% if tab.term == app.request.query.get('search') %}is-active{% endif %}">{{ tab.term }}</button></a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    {% sw_include '@Storefront/storefront/page/search/search-pagelet.html.twig' with { page: page } %}
+
+{% endblock %}

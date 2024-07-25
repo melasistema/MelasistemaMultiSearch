@@ -1,0 +1,51 @@
+{
+  "name": "melasistema/shopware6-multi-search",
+  "description": "Multiple Search - Shopware plugin",
+  "version": "0.0.1",
+  "type": "shopware-platform-plugin",
+  "license": "GPLv2 or later",
+  "authors": [
+    {
+      "name": "Melasistema",
+      "role": "Manufacturer"
+    },
+    {
+      "name": "Luca Visciola",
+      "role": "Full Stack Developer"
+    }
+  ],
+  "require": {
+    "shopware/core": "~6.5.0",
+    "shopware/storefront": "~6.5.0"
+  },
+  "extra": {
+    "shopware-plugin-class": "MelasistemaMultiSearch\\MelasistemaMultiSearch",
+    "plugin-icon": "src/Resources/config/plugin.png",
+    "copyright": "Melasistema",
+    "label": {
+      "en-GB": "Melasistema multiple search",
+      "it-IT": "Melasistema multiple search",
+      "de-DE": "Melasistema multiple search"
+    },
+    "description": {
+      "en-GB": "Melasistema multiple search",
+      "it-IT": "Melasistema multiple search",
+      "de-DE": "Melasistema multiple search"
+    },
+    "manufacturerLink": {
+      "en-GB": "https://melasistema.com",
+      "it-IT": "https://melasistema.com",
+      "de-DE": "https://melasistema.com"
+    },
+    "supportLink": {
+      "en-GB": "https://lucavisciola.com",
+      "it-IT": "https://lucavisciola.com",
+      "de-DE": "https://lucavisciola.com"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "MelasistemaMultiSearch\\": "src/"
+    }
+  }
+}

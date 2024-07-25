@@ -1,0 +1,33 @@
+{% block multiSearchModal %}
+    <div data-multi-search class="modal fade" id="multiSearchModal" tabindex="-1" role="dialog" aria-labelledby="multiSearchModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header only-close">
+                    <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="card-title mb-4">
+                        {{ "melasistemaMultiSearch.modal.title"|trans }}
+                    </div>
+                    <div class="card-description mb-4">
+                        {{ "melasistemaMultiSearch.modal.text"|trans }}
+                    </div>
+
+                    <form id="mela-multi-search-form" action="{{ path('frontend.multi.search.submit') }}" method="post">
+                        <div class="form-elements">
+                            <textarea name="multiSearchKeywords" rows="6" placeholder="{{ "melasistemaMultiSearch.modal.form.placeholder"|trans }}"></textarea>
+                        </div>
+                        <div class="form-footer-elements">
+                            <button id="start-button-multi-search-modal" type="submit" class="btn btn-primary">{{ "melasistemaMultiSearch.modal.form.submitButton"|trans }}</button>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

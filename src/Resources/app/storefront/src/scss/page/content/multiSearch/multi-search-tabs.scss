@@ -1,0 +1,23 @@
+.multi-search-tabs-wrapper {
+  margin-bottom:40px;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    padding-left: 0;
+    > li {
+      list-style: none;
+      text-align: center;
+      margin: 0px 15px 0px 0px;
+      a {
+        text-decoration: none;
+        button {
+          &.is-active {
+            background-color: var(--bs-btn-hover-bg);
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "melasistemaMultiSearch": {
+        "openModal" : {
+            "button" : {
+                "text": "Multi Search"
+            }
+        },
+        "modal" : {
+            "title": "Multi Search",
+            "text": "Enter your keywords, one on each line.",
+            "form": {
+                "placeholder": "Type one keyword per line",
+                "submitButton": "Submit"
+            }
+        }
+    }
+}

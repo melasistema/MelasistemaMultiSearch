@@ -1,0 +1,10 @@
+{
+  "name": "melasistema-multi-search-storefront",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Simple multi search plugin for Shopware",
+  "license": "GPLv2 or later",
+  "dependencies": {
+
+  }
+}

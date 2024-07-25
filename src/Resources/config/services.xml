@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+
+        <!-- Logger service -->
+        <service id="melasistema.multi.search.logger" class="Monolog\Logger">
+            <factory service="Shopware\Core\Framework\Log\LoggerFactory" method="createRotating" />
+            <argument type="string">melasistema.multi.search.logger</argument>
+        </service>
+
+        <!-- Controllers -->
+        <service id="MelasistemaMultiSearch\Storefront\Controller\MultiSearchController" public="true">
+            <argument type="service" id="Shopware\Storefront\Page\Search\SearchPageLoader"/>
+            <argument type="service" id="melasistema.multi.search.logger"/>
+            <call method="setContainer">
+                <argument type="service" id="service_container"/>
+            </call>
+            <call method="setTwig">
+                <argument type="service" id="twig"/>
+            </call>
+        </service>
+
+    </services>
+
+</container>
